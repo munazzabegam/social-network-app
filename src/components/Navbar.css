@@ -1,27 +1,71 @@
 :root {
-    --blue: #14d0f0e6;
-    --pink: rgba(255, 131, 195, 0.4);
-    --black: rgba(0, 0, 0, 0.9);
+    --background-main: #000000;
+    --background-secondary: #ffffff; 
+  
+    /* Primary Colors */
+    --primary-color: #3498db; 
+    --primary-color-hover: #2980b9;
+     
+    /* Secondary Colors */
+    --secondary-color: #e67e22; 
+    --secondary-color-hover: #d35400; 
+  
+  
+    /* Text Colors */
+    --text-primary: #ffffff; 
+    --text-secondary: #000000;
+  
+    /* Border Colors */
+    --border-color: #dcdcdc; 
+    --border-color-dark: #bdc3c7;
+  
+    /* Shadow Colors */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+  
+    /* Highlight Colors */
+    --highlight-color: #f39c12;
+    --highlight-color-hover: #e67e22; 
+  
+    /* Background Overlay */
+    --overlay-color: rgba(0, 0, 0, 0.5); 
+
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
   }
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    color: rgb(0, 0, 0);
-    /* background-color: #00000080; */
+    color: var(--text-primary);
+    background-color: var(--background-main);
+    width: 100%;
   }
   
   .navbar-items {
     display: flex;
     gap: 40px;
-    z-index: 12;
-    padding: 10px 50px;
-    border-radius: 12px;
   }
   
   .navbar-items a {
-    color: rgb(0, 0, 0);
+    color: var(--text-primary);
     text-decoration: none;
+
+  }
+
+  .navbar-signup {
+    background-color: var(--background-secondary);
+    padding: 4px 20px;
+    margin-right: 40px;
+    border-radius: 9px;
+  }
+
+  .navbar-signup a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: bold;
   }
   
   .navbar-toggle {

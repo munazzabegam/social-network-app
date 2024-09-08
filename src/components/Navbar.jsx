@@ -19,11 +19,16 @@ export default function Navbar() {
           &times; {/* Close icon */}
         </button>
         <Link to="/">HOME</Link>
-        <Link to="/profile">Profile</Link>
-        <Link to="/explore">Explore</Link>
-        <Link to="/journey">About us</Link>
+        <Link to="/profile">PROFILE</Link>
+        <Link to="/explore">EXPLORE</Link>
+        <Link to="/journey">ABOUT US</Link>
         <Link to="/contact">CONTACT US</Link>
       </div>
+      <dv className="navbar-btn">
+        <div className="navbar-signup">
+            <a href="">SIGN UP</a>
+        </div>
+      </dv>
       <div className="navbar-toggle">
         <button className="navbar-button" onClick={toggleMenu}>
           &#9776; {/* Bar (hamburger) icon */}
