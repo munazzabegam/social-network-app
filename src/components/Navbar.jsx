@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-brand">
-        <h1>Socio</h1>
+        <h1>SOCIO APP</h1>
       </div>
       <div className={`navbar-items ${isOpen ? 'open' : ''}`}>
         <button className="close-button" onClick={toggleMenu}>
@@ -23,12 +23,15 @@ export default function Navbar() {
         <Link to="/explore">EXPLORE</Link>
         <Link to="/journey">ABOUT US</Link>
         <Link to="/contact">CONTACT US</Link>
+        <Link className='navbar-signup' to="/signup" style={{color: 'black'}}>SIGN UP</Link>
       </div>
-      <dv className="navbar-btn">
+
+      {/* <dv className="navbar-btn">
         <div className="navbar-signup">
             <a href="">SIGN UP</a>
         </div>
-      </dv>
+      </dv> */}
+
       <div className="navbar-toggle">
         <button className="navbar-button" onClick={toggleMenu}>
           &#9776; {/* Bar (hamburger) icon */}

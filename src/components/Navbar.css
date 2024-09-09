@@ -10,7 +10,6 @@
     --secondary-color: #e67e22; 
     --secondary-color-hover: #d35400; 
   
-  
     /* Text Colors */
     --text-primary: #ffffff; 
     --text-secondary: #000000;
@@ -27,7 +26,7 @@
     --highlight-color-hover: #e67e22; 
   
     /* Background Overlay */
-    --overlay-color: rgba(0, 0, 0, 0.5); 
+    --overlay-color: #00000082; 
 
   }
   
@@ -40,8 +39,11 @@
     justify-content: space-between;
     align-items: center;  
     color: var(--text-primary);
-    background-color: var(--background-main);
+    background-color: var(--overlay-color);
     width: 100%;
+  }
+  .navbar-brand {
+    margin-left: 2%;
   }
   
   .navbar-items {
@@ -62,11 +64,11 @@
     border-radius: 9px;
   }
 
-  .navbar-signup a {
+  /* .navbar-signup a {
     text-decoration: none;
     color: var(--text-secondary);
     font-weight: bold;
-  }
+  } */
   
   .navbar-toggle {
     display: none;
@@ -100,6 +102,10 @@
     .navbar-items.open {
       transform: translateY(0);
     }
+
+    .navbar-signup {
+      display: none;
+    }
   
     .navbar-toggle {
       display: block;
@@ -109,7 +115,7 @@
       font-size: 24px;
       background: none;
       border: none;
-      color: rgb(0, 0, 0);
+      color: var(--text-primary);
       cursor: pointer;
     }
   
@@ -120,7 +126,7 @@
       font-size: 36px;
       background: none;
       border: none;
-      color: rgb(255, 255, 255);
+      color: var(--text-primary);
       cursor: pointer;
       z-index: 10001;
       display: block;

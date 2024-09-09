@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import Carousel from "./components/Carousel";
 
 const Home = () => {
   return (
     <div>
-      <h2>Welcome to My Social Network</h2>
+      <Carousel />
     </div>
   );
 };
