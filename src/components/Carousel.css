@@ -1,3 +1,9 @@
+.carousel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .carousel-item img {
     height: 100%;
     object-fit: cover;

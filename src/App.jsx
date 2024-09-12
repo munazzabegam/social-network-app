@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import AdminPanel from './pages/AdminPanel';
+import Home from './Home';
+import AdminPanel from './AdminPanel';
 
 const App = () => {
   return (
