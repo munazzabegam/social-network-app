@@ -1,9 +1,11 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './Card.css'
 
 function WithHeaderExample() {
   return (
+    <section className='card-section'>
     <Card>
       <Card.Header>Featured</Card.Header>
       <Card.Body>
@@ -14,6 +16,7 @@ function WithHeaderExample() {
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
+    </section>
   );
 }
 
